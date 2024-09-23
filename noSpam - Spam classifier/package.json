@@ -1,0 +1,22 @@
+{
+    "name": "email-spam-classifier-app",
+    "version": "1.0.0",
+    "description": "An Electron app for classifying email spam",
+    "author": "Your Name",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "build": "electron-builder"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "electron": "^28.1.0",
+      "electron-builder": "^22.8.0"
+    },
+    "build": {
+      "win": {
+        "icon": "./Icon/figma.png"
+      }
+    }
+  }
+  

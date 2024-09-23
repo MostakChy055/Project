@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Spam Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <video src="./Vidoes/backgroundVid.mp4" id="myVideo" autoplay muted loop></video>
+        <div class="wrapper" id="wr1">
+            <h2>Email Spam Checker</h2>
+            <textarea id="emailInput" placeholder="Paste your email here.." required></textarea>
+            <button id = "btn35" onclick="classifyEmail()" class="btn btn1">Check</button>
+        </div>
+        <!-- Add this div for the custom pop-up message -->
+        <div id="customPopup" class="popup">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <p id="popupResult"></p>
+        </div>
+    </div>
+    <!-- <script>
+        const textarea = document.querySelector("textarea");
+        const wrapper = document.querySelector("wr1");
+        textarea.addEventListener("keyup", e => {
+            textarea.style.height = "auto";
+            wrapper.style.height="auto";
+            let hg = e.target.scrollHeight;
+            let sg = e.target.scrollHeight+200;
+            textarea.style.height = `${hg}px`
+            wrapper.style.height = `${sg}px`
+        });
+        
+        
+    </script> -->
+    <script src="script.js"></script>
+    <script>
+        const video = document.getElementById('myVideo');
+    
+        // Increase playback speed to 1.5x
+        video.playbackRate = 3.5;
+      </script>
+</body>
+</html>
